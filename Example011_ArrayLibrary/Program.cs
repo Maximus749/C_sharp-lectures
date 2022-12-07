@@ -11,29 +11,30 @@ void PrintArray(int[] col){
     int count = col.Length;
     int position = 0;
     while (position < count){
-        Console.WriteLine(col[position]);
+        Console.Write($"{col[position]} ");
         position++;
     }
+    Console.WriteLine();
 }
 
-int IndexOf(int[] collection, int find){
-    int count = collection.Length;
-    int index = 0;
-    int position = -1;        //Позиция указана -1 для того, что если элемента нет, показало не 0
-    while (index < count){
-        if (collection[index] == find){
-            position = index;
-            break;
-        }
-        index++;
-    }
-    return position;
-}
+// int IndexOf(int[] collection, int find){
+//     int count = collection.Length;
+//     int index = 0;
+//     int position = -1;        //Позиция указана -1 для того, что если элемента нет, показало не 0
+//     while (index < count){
+//         if (collection[index] == find){
+//             position = index;
+//             break;
+//         }
+//         index++;
+//     }
+//     return position;
+// }
 
 int[] array = new int[10];
 FillArray(array);
 PrintArray(array);
-Console.WriteLine();
+// Console.WriteLine();
 
-int pos = IndexOf(array, 4);
-Console.WriteLine(pos);
+// int pos = IndexOf(array, 4);
+// Console.WriteLine(pos);
